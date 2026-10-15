@@ -1,0 +1,11 @@
+{
+  "_provenance": "Task-defining pins shared by grader.py and every circuit under circuits/. grader.py keeps its own inline derivation (README section 3) and asserts at import that this file matches; circuits load these values instead of restating them. B/M are the register widths, C_SCALE the output scale 2^24, EPS the inclusive centered correctness band, N2_MAX = 3*255^2, N_ACHIEVABLE the count of attainable squared distances, and the two digests are the grader's SHA-256 pins over the achievable domain and the rounded table (LE u32 streams).",
+  "B": 8,
+  "M": 25,
+  "C_SCALE": 16777216,
+  "EPS": 32,
+  "N2_MAX": 195075,
+  "N_ACHIEVABLE": 139637,
+  "TBL_DIGEST": "3de8b2b0b3063d0f46aa4cbcf528173b73d4cf0d28d0a2fac27491238d804439",
+  "DOM_DIGEST": "f52f7e1b110369374daea81136a21c36eca11364ccb2653b725d4f6ba6b1e8cc"
+}

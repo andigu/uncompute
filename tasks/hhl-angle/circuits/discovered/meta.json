@@ -1,0 +1,71 @@
+{
+ "expected": {
+  "toffoli": 1348,
+  "qubits": 115
+ },
+ "registers": [
+  {
+   "name": "x",
+   "label": "$X$ (21)"
+  },
+  {
+   "name": "k",
+   "label": "$k$ (33)"
+  }
+ ],
+ "phase_labels": {
+  "lookup": "Lookup",
+  "rotate": "Rotate",
+  "c0add": "$c_0$ add",
+  "vcompute": "$v$ compute",
+  "product": "Product",
+  "comp": "Bias cancel",
+  "vuncompute": "$v$ uncompute",
+  "unrotate": "Unrotate",
+  "fixup": "Fixup"
+ },
+ "roles": [
+  {
+   "set": "X",
+   "name": "$X$ (input)"
+  },
+  {
+   "set": "k",
+   "name": "$k$ (accumulator)"
+  },
+  {
+   "set": "g2",
+   "name": "$g_2$ word"
+  },
+  {
+   "set": "shift",
+   "name": "Shift word"
+  },
+  {
+   "set": "wslope",
+   "name": "Slope word"
+  },
+  {
+   "set": "intercept",
+   "name": "Intercept word"
+  },
+  {
+   "set": "guard",
+   "name": "Guard bits"
+  },
+  {
+   "set": "kick",
+   "name": "Kick wire",
+   "muted": true
+  },
+  {
+   "set": "onehot",
+   "name": "One-hot bank"
+  },
+  {
+   "transient": true,
+   "name": "AND scratch",
+   "muted": true
+  }
+ ]
+}

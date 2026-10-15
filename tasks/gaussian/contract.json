@@ -1,0 +1,9 @@
+{
+ "_provenance": "gaussian task contract: the derived values shared by grader.py and every circuit under circuits/. grader.py keeps its own inline derivation and asserts this file matches it (the grader is authoritative). eps_ulp = 429 is the 1e-7 error bound in output ULP, floor(1e-7 * 2^frac_bits); out_max = round(exp(0) * 2^frac_bits) = 2^32 (the function maximum, at x = 0); x_mag_half = 8 * 2^frac_bits bounds the two's-complement input domain x in [-8, 8) (half-open).",
+ "n_x": 39,
+ "m": 39,
+ "frac_bits": 32,
+ "x_mag_half": 34359738368,
+ "eps_ulp": 429,
+ "out_max": 4294967296
+}

@@ -1,0 +1,120 @@
+[project]
+name = "uncompute"
+version = "0.1.0"
+description = "Circuits, evaluator, and certified results for the paper \"Discovering state-of-the-art quantum circuits with large language models\"."
+license = "Apache-2.0"
+authors = [
+    { name = "Andi Gu" },
+    { name = "Alek H. Kemeny" },
+    { name = "Susanne F. Yelin" },
+    { name = "Mikhail D. Lukin" },
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/andigu/uncompute"
+
+[dependency-groups]
+# The graders, circuits, and gen_constants.py scripts import numpy, galois, and mpmath.
+# The command-line tools in tools/ import click.
+# matplotlib and scienceplots render the liveness and occupancy figures (tools/).
+# `uv sync` installs this group; `pip install .` installs only the uncompute package.
+dev = [
+    "numpy>=1.26",
+    "click>=8.1",
+    "galois>=0.4.11",
+    "mpmath>=1.3",
+    "matplotlib>=3.8",
+    "scienceplots>=2.1",
+    "ruff>=0.13",
+    "ty>=0.0.1a20",
+]
+
+# The package supports Python >= 3.10 (requires-python). The lock targets
+# Python 3.12 (.python-version) so that the dependency groups resolve.
+[tool.uv]
+environments = ["python_full_version >= '3.12'"]
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["uncompute*"]
+
+[tool.ruff]
+cache-dir = ".cache/ruff"
+# ruff reads target-version (Python 3.10) from requires-python.
+line-length = 100
+
+[tool.ruff.lint]
+# ruff's default rule set (the ruff version is pinned in uv.lock).
+# Single-letter names (l, I, O) follow the math; a few lambdas are bound
+# to names on purpose.
+# Opt-in families on top of the defaults.
+extend-select = ["C90", "PLR0912", "PLR0915", "ERA", "ARG", "RET", "PTH", "N", "D"]
+ignore = [
+    "E731", "E741",
+    # Capitalized names follow the math (H, MUL64, CX_).
+    "N802", "N803", "N806",
+    # Missing docstrings: boilerplate docstrings hurt readability.
+    "D100", "D101", "D102", "D103", "D104", "D105", "D106", "D107",
+    # A wrapped first docstring line is fine.
+    "D205",
+    # Docstrings often open with a variable or an expression (`tgt ^= ...`).
+    "D403",
+    # bin(x).count("1") and zip(xs, xs[1:]) read clearly as written.
+    "FURB161", "RUF007",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "pep257"
+
+# Generous limits: they flag outliers, not every long emitter.
+[tool.ruff.lint.mccabe]
+max-complexity = 25
+
+[tool.ruff.lint.pylint]
+max-branches = 30
+max-statements = 120
+
+[tool.ruff.lint.per-file-ignores]
+# Circuits pass loop-local closures to builder helpers that call them at once,
+# so B023 (late binding) only reports false positives there.
+"tasks/*/circuits/**" = ["B023"]
+# Plaquette names its rails after the paper (P', S/T/U, V/X, MU).
+"tasks/lattice-gauge-plaquette/**" = ["N816"]
+
+[tool.ty.environment]
+python-version = "3.12"
+# Tools import from this directory through sys.path inserts, so ty needs it
+# as an extra search root.
+extra-paths = ["tools"]
+
+# ty miscounts positional arguments after a starred unpack (f(*xs, a, b)).
+[[tool.ty.overrides]]
+include = [
+    "tasks/lattice-gauge-plaquette/circuits/osorio-composed/circuit.py",
+    "tasks/dqi-hermitian/circuits/discovered/gen_constants.py",
+]
+rules = { too-many-positional-arguments = "ignore" }
+
+# START mixes int and list values, so ty cannot narrow its entries.
+[[tool.ty.overrides]]
+include = ["tasks/hhl-angle/circuits/discovered/gen_constants.py"]
+rules = { invalid-argument-type = "ignore" }
+
+# matplotlib's RcParams stubs reject a plain dict in rcParams.update().
+[[tool.ty.overrides]]
+include = ["tools/_figstyle.py"]
+rules = { no-matching-overload = "ignore" }
+
+[tool.ty.analysis]
+# Optional packages that no default dependency group installs.
+allowed-unresolved-imports = [
+    "gmpy2", "certifi", "pyscf", "pyscf.**",
+    "openfermion", "openfermion.**", "qualtran", "qualtran.**", "dqi.**",
+]

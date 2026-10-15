@@ -1,0 +1,111 @@
+{
+ "expected": {
+  "toffoli": 6355,
+  "qubits": 252
+ },
+ "registers": [
+  {
+   "name": "ri",
+   "label": "$r_i$ (3×8)",
+   "regs": 3
+  },
+  {
+   "name": "rj",
+   "label": "$r_j$ (3×8)",
+   "regs": 3
+  },
+  {
+   "name": "k",
+   "label": "$k$ (25)"
+  }
+ ],
+ "phase_labels": {
+  "init": "Init",
+  "dist": "Squared distance",
+  "scan": "Exponent scan",
+  "normalize": "Normalize",
+  "label": "Interval label",
+  "lead": "Lead coefficient",
+  "h1": "Horner step 1",
+  "h0": "Horner step 0",
+  "rescale": "Barrel rescale",
+  "accumulate": "Accumulate",
+  "un-rescale": "Un-barrel rescale",
+  "un-h0": "Un-Horner step 0",
+  "un-h1": "Un-Horner step 1",
+  "un-lead": "Un-lead coefficient",
+  "un-label": "Un-label",
+  "un-normalize": "Un-normalize",
+  "un-scan": "Un-scan",
+  "un-dist": "Un-distance"
+ },
+ "roles": [
+  {
+   "set": "ri",
+   "name": "$r_i$ (input)"
+  },
+  {
+   "set": "rj",
+   "name": "$r_j$ (input)"
+  },
+  {
+   "set": "k",
+   "name": "$k$ (accumulator)"
+  },
+  {
+   "set": "n2",
+   "name": "$n_2$ accumulator"
+  },
+  {
+   "set": "diff",
+   "name": "Signed difference $D_c$",
+   "muted": true
+  },
+  {
+   "set": "scan-z",
+   "name": "Scan none-so-far wire",
+   "muted": true
+  },
+  {
+   "set": "exp",
+   "name": "One-hot exponent flags",
+   "muted": true
+  },
+  {
+   "set": "steer",
+   "name": "Parity + shift word",
+   "muted": true
+  },
+  {
+   "set": "mant",
+   "name": "Mantissa $u$"
+  },
+  {
+   "set": "label",
+   "name": "Interval label",
+   "muted": true
+  },
+  {
+   "set": "poly2",
+   "name": "$V_2$ ($c_2$ load)"
+  },
+  {
+   "set": "poly1",
+   "name": "$V_1$"
+  },
+  {
+   "set": "poly0",
+   "name": "$V_0$"
+  },
+  {
+   "set": "pad",
+   "name": "Rescale pad",
+   "muted": true
+  },
+  {
+   "transient": true,
+   "name": "AND scratch",
+   "muted": true
+  }
+ ]
+}

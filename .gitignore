@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.cache/
+
+# Compiled C libraries (make kernel, make replay-kernel, circuit search helpers)
+*.dylib
+*.so
+
+# Evaluator and profiler outputs
+ops*.bin
+report.json
+tq_cost.json
+
+# Lean build output
+.lake/
+
+# macOS
+.DS_Store

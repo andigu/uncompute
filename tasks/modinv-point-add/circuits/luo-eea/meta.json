@@ -1,0 +1,57 @@
+{
+  "expected": {
+    "toffoli": 69529757,
+    "qubits": 838
+  },
+  "registers": [
+    {
+      "name": "target_x",
+      "label": "$P_x$ (256)"
+    },
+    {
+      "name": "target_y",
+      "label": "$P_y$ (256)"
+    }
+  ],
+  "roles": [
+    {
+      "set": "x1",
+      "name": "$x_1$ (target_x)"
+    },
+    {
+      "set": "y1",
+      "name": "$y_1$ (target_y)"
+    },
+    {
+      "set": "A",
+      "name": "$A$ (accumulator)"
+    },
+    {
+      "set": "wext",
+      "name": "Work1/Work2 extras"
+    },
+    {
+      "set": "len",
+      "name": "Length registers"
+    },
+    {
+      "set": "ctrl",
+      "name": "Phase/Sign/Iter controls"
+    },
+    {
+      "set": "scr",
+      "name": "EEA scratch",
+      "muted": true
+    }
+  ],
+  "phase_labels": {
+    "init": "Init",
+    "s1-const-subs": "Const subs",
+    "s2-idiv": "IDiv ($\\lambda$)",
+    "s3-squ": "Square",
+    "s4-sub-squ": "Sub + $3Q_x$",
+    "s5-squ-dag": "Square$^\\dagger$",
+    "s6-imul": "IMul",
+    "s7-final": "Final consts"
+  }
+}

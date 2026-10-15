@@ -1,0 +1,58 @@
+{
+  "expected": {
+    "toffoli": 20521949,
+    "qubits": 843
+  },
+  "registers": [
+    {
+      "name": "x1",
+      "label": "$x_1$ (256)"
+    },
+    {
+      "name": "y1",
+      "label": "$y_1$ (256)"
+    }
+  ],
+  "phase_labels": {
+    "init": "Init",
+    "s1-const-subs": "Coord subs",
+    "s2-idiv": "IDiv (EEA sandwich)",
+    "s3-squ": "$\\lambda^2$",
+    "s4-sub-squ": "$x_3$ arithmetic",
+    "s5-squ-dag": "$\\lambda^2$ dagger",
+    "s6-imul": "IMul (EEA sandwich)",
+    "s7-final": "Final subs"
+  },
+  "roles": [
+    {
+      "set": "io",
+      "name": "$x_1$/$y_1$ I/O"
+    },
+    {
+      "set": "A",
+      "name": "Workspace $A$"
+    },
+    {
+      "set": "wx",
+      "name": "Walk-frame extras $w_{1x}$/$w_{2x}$"
+    },
+    {
+      "set": "len",
+      "name": "Length counters lt/lq/ls/lrp"
+    },
+    {
+      "set": "flag",
+      "name": "Phase/sign flags",
+      "muted": true
+    },
+    {
+      "set": "aux",
+      "name": "Tree + arithmetic scratch",
+      "muted": true
+    },
+    {
+      "set": "mulpool",
+      "name": "Mul pool (s3-s5)"
+    }
+  ]
+}

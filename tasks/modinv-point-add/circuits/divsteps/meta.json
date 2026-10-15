@@ -1,0 +1,98 @@
+{
+  "expected": {
+    "toffoli": 4006673,
+    "qubits": 935
+  },
+  "entries": {
+    "fill.py": {"toffoli": 3637655, "qubits": 1031},
+    "j5.py": {"toffoli": 4317926, "qubits": 927},
+    "j6.py": {"toffoli": 4427338, "qubits": 913},
+    "j7.py": {"toffoli": 4649514, "qubits": 904},
+    "j8.py": {"toffoli": 5331729, "qubits": 897},
+    "j9.py": {"toffoli": 7866779, "qubits": 893},
+    "wide.py": {"toffoli": 3293278, "qubits": 1191}
+  },
+  "registers": [
+    {
+      "name": "x1",
+      "label": "$P.x$ (256)"
+    },
+    {
+      "name": "y1",
+      "label": "$P.y$ (256)"
+    }
+  ],
+  "phase_labels": {
+    "init": "Init",
+    "s1-const-subs": "Coordinate subs",
+    "s2-walkA": "Idiv walk A (fwd)",
+    "s2-seam": "Idiv seam",
+    "s2-walkB": "Idiv walk B (rev)",
+    "s2-recompute": "Idiv recompute",
+    "s4-sub-squ": "X update (fused square)",
+    "squ-a-lo": "Half-square lo",
+    "squ-b-hi": "Half-square hi",
+    "squ-c-sum": "Half-square cross",
+    "s6-mul1": "Imul product",
+    "s6-walkC": "Imul walk C (fwd)",
+    "s6-seam": "Imul seam",
+    "s6-walkD": "Imul walk D (rev)",
+    "s7-final": "Final remainder",
+    "close": "Close"
+  },
+  "roles": [
+    {
+      "set": "io/x1",
+      "name": "$P.x$ register"
+    },
+    {
+      "set": "io/y1",
+      "name": "$P.y$ register"
+    },
+    {
+      "set": "A",
+      "name": "Accumulator word"
+    },
+    {
+      "set": "walk/signs",
+      "name": "Row sign wires",
+      "muted": true
+    },
+    {
+      "set": "walk/counters",
+      "name": "z counter",
+      "muted": true
+    },
+    {
+      "set": "walk/tstfrz",
+      "name": "Freeze machinery (armed window)",
+      "muted": true
+    },
+    {
+      "set": "record/R",
+      "name": "Record brigade (span-curve fill)"
+    },
+    {
+      "set": "walk/straddle",
+      "name": "Walk row straddle (transient)"
+    },
+    {
+      "set": "mul/singles",
+      "name": "Mul flag/carry singles",
+      "muted": true
+    },
+    {
+      "set": "mul/pool",
+      "name": "Pooled mul stack"
+    },
+    {
+      "set": "square/product",
+      "name": "Square product (transient)"
+    },
+    {
+      "transient": true,
+      "name": "Adder carries / decode scratch",
+      "muted": true
+    }
+  ]
+}

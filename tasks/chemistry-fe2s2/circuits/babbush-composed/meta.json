@@ -1,0 +1,76 @@
+{
+  "expected": {
+    "toffoli": 55473,
+    "qubits": 139
+  },
+  "registers": [
+    {
+      "name": "i",
+      "label": "$i$ (16)"
+    },
+    {
+      "name": "sigma",
+      "label": "$\\sigma$ (16)"
+    },
+    {
+      "name": "x",
+      "label": "$x$ (40)"
+    }
+  ],
+  "phase_labels": {
+    "init": "Init",
+    "lookup": "Alias lookup",
+    "cmp/fwd": "Compare",
+    "cmp/select": "Select term",
+    "cmp/rev": "Uncompare",
+    "unlookup/measure": "Unlookup measure",
+    "unlookup/window:prep": "Unlookup window",
+    "unlookup/window:fixup": "Unlookup fixup",
+    "unlookup/window:unprep": "Unlookup unprep",
+    "select-pauli": "SELECT walk",
+    "erase/sel": "Erase selection",
+    "erase/flag": "Erase comparison bit"
+  },
+  "roles": [
+    {
+      "set": "i",
+      "name": "reg i"
+    },
+    {
+      "set": "sigma",
+      "name": "reg sigma"
+    },
+    {
+      "set": "x",
+      "name": "reg x"
+    },
+    {
+      "set": "sel",
+      "name": "Selection scratch"
+    },
+    {
+      "set": "flag",
+      "name": "Held f copy",
+      "muted": true
+    },
+    {
+      "set": "word",
+      "name": "Alias word"
+    },
+    {
+      "set": "carry",
+      "name": "Comparator carries",
+      "muted": true
+    },
+    {
+      "set": "theta",
+      "name": "Sign scratch",
+      "muted": true
+    },
+    {
+      "set": "window",
+      "name": "Unlookup window",
+      "muted": true
+    }
+  ]
+}

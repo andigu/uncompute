@@ -1,0 +1,55 @@
+{
+  "expected": {
+    "toffoli": 172128,
+    "qubits": 1859
+  },
+  "registers": [
+    {
+      "name": "g",
+      "label": "$g_0\\,..\\,g_{191}$ (192$\\times$9)",
+      "regs": 192
+    },
+    {
+      "name": "k",
+      "label": "$k$ (51)"
+    }
+  ],
+  "phase_labels": {
+    "init": "Init",
+    "encode": "Encode",
+    "loops": "Loops",
+    "decode": "Decode (mirror)"
+  },
+  "roles": [
+    {
+      "set": "g",
+      "name": "$g_0\\,..\\,g_{191}$ links (I/O)"
+    },
+    {
+      "set": "k",
+      "name": "$k$ accumulator (I/O)"
+    },
+    {
+      "set": "chain",
+      "name": "Chain state"
+    },
+    {
+      "set": "util",
+      "name": "Hot utilities",
+      "muted": true
+    },
+    {
+      "set": "scaffold",
+      "name": "Extraction scaffolding",
+      "muted": true
+    },
+    {
+      "set": "basis",
+      "name": "Trace-class basis"
+    },
+    {
+      "set": "carry",
+      "name": "Adder carries"
+    }
+  ]
+}

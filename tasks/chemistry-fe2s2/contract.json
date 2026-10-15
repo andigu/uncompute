@@ -1,0 +1,154 @@
+{
+ "_provenance": "Derived values of the task, shared by grader.py and the circuits under circuits/. L is the term count of the [2Fe-2S] (30e,20o) Jordan-Wigner table after truncation at |w| >= 1e-4 Ha. fcidump_sha256 pins the decompressed data/fcidump.xz, the FCIDUMP file of Li and Chan (2017) from github.com/zhendongli2008/Active-space-model-for-Iron-Sulfur-Clusters. data_sha256 is the SHA-256 of the 41,052 alias words of data/table.json.xz as little-endian u64. The row order places rows in frame blocks over the seven commuting frames {F, C, D, D2, s_thio, s_d45, x_muS}; regions lists the 14 maximal runs of blocks with the same frame set. The alias words come from the credit-aligned melt schedule of reference.py and alias_sched.py. masks_sha256 is the SHA-256 of the Pauli masks (flip | zy<<40 | ny2<<80) as 16-byte little-endian blocks. The grader keeps its own derivation and asserts that this file matches it.",
+ "L": 41052,
+ "idx_bits": 16,
+ "sigma_bits": 16,
+ "x_bits": 40,
+ "mu": 16,
+ "b_word": 34,
+ "n_electrons": 30,
+ "hf_state": "0x3fffffff",
+ "truncation_threshold": "0.0001",
+ "lambda": "133.4649959457009",
+ "fcidump_sha256": "95d8786af06eeea2107e19ffd98c66a6ca97fc8c9864175a4f6d64512b6f2df9",
+ "data_sha256": "1fd83441ba295e3dace47ee25224bfb84a539d1c63c14e0a1ce02c2fb8c03e45",
+ "masks_sha256": "b970bec6c3689c53de7738c7f6a7454cdf07e641e27e4b048fc1b5eb52a02751",
+ "n_pairs": 20400,
+ "n_tokens": 9942,
+ "n_residual_pairs": 516,
+ "n_selfsym": 252,
+ "n_groups": 4152,
+ "n_sigma_groups": 612,
+ "n_sigma_tokens": 66,
+ "n_residual_quads": 245,
+ "n_tail_doubles": 123,
+ "n_spans": 3221,
+ "regions": [
+  {
+   "gens": [
+    "F",
+    "C",
+    "D",
+    "D2",
+    "s_thio"
+   ],
+   "start": 0,
+   "end": 7328
+  },
+  {
+   "gens": [
+    "F",
+    "C",
+    "D",
+    "D2",
+    "s_d45"
+   ],
+   "start": 7328,
+   "end": 14016
+  },
+  {
+   "gens": [
+    "F",
+    "C",
+    "D",
+    "D2",
+    "x_muS"
+   ],
+   "start": 14016,
+   "end": 18464
+  },
+  {
+   "gens": [
+    "F",
+    "C",
+    "D",
+    "D2"
+   ],
+   "start": 18464,
+   "end": 26400
+  },
+  {
+   "gens": [
+    "F",
+    "C",
+    "D",
+    "s_d45"
+   ],
+   "start": 26400,
+   "end": 28384
+  },
+  {
+   "gens": [
+    "F",
+    "C",
+    "D",
+    "x_muS"
+   ],
+   "start": 28384,
+   "end": 29280
+  },
+  {
+   "gens": [
+    "F",
+    "C",
+    "D"
+   ],
+   "start": 29280,
+   "end": 33216
+  },
+  {
+   "gens": [
+    "F",
+    "C",
+    "D2"
+   ],
+   "start": 33216,
+   "end": 36648
+  },
+  {
+   "gens": [
+    "F",
+    "D",
+    "D2"
+   ],
+   "start": 36648,
+   "end": 37488
+  },
+  {
+   "gens": [
+    "F",
+    "C"
+   ],
+   "start": 37488,
+   "end": 40608
+  },
+  {
+   "gens": [
+    "F",
+    "D"
+   ],
+   "start": 40608,
+   "end": 40748
+  },
+  {
+   "gens": [
+    "C",
+    "D"
+   ],
+   "start": 40748,
+   "end": 40968
+  },
+  {
+   "gens": [
+    "C"
+   ],
+   "start": 40968,
+   "end": 40992
+  },
+  {
+   "gens": [],
+   "start": 40992,
+   "end": 41052
+  }
+ ]
+}

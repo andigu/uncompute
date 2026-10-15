@@ -1,0 +1,2 @@
+{"source": "circuits/discovered/circuit.py", "h_ops": "1103761b173a93dfb7f15184e2bb4dca8a632a21cef5186130bb32d22b87bef5", "verdict": "OK", "toffoli": 442397, "qubits": 1837, "tq_cost": 812683289, "clifford": 124823679.0, "ts": 1792037278}
+{"source": "circuits/khattar-eea/circuit.py", "h_ops": "1a258914dd40e1613f7360801f3c566ac5ac9526f1543ff567a3a3717e503b5e", "verdict": "OK", "toffoli": 5125070, "qubits": 1938, "tq_cost": 9932385660, "clifford": 170463840.0, "ts": 1792037326}

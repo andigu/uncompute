@@ -1,0 +1,83 @@
+{
+  "expected": {
+    "toffoli": 926912,
+    "qubits": 2395
+  },
+  "registers": [
+    {
+      "name": "s",
+      "label": "$s$ (123×6 syndrome)",
+      "regs": 123
+    },
+    {
+      "name": "WA",
+      "label": "$w_A$ (walk vector strip)",
+      "size": 288
+    },
+    {
+      "name": "WB",
+      "label": "$w_B$ (walk vector strip)",
+      "size": 288
+    },
+    {
+      "name": "core",
+      "label": "walk core ($C_u$, $\\kappa^{\\pm}$, freeze record, flags)",
+      "size": 27
+    }
+  ],
+  "phase_labels": {
+    "init": "Init",
+    "P1": "Pass 1: atomic walk",
+    "mux": "Kind mux",
+    "tail": "EI tail",
+    "unmux": "Kind unmux",
+    "xseam": "X seam",
+    "P2": "Pass 2: mirror"
+  },
+  "roles": [
+    {
+      "set": "s",
+      "name": "$s$ (syndrome)"
+    },
+    {
+      "set": "WA",
+      "name": "Head strip $W_A$"
+    },
+    {
+      "set": "WB",
+      "name": "Mate strip $W_B$"
+    },
+    {
+      "set": "U",
+      "name": "Native strip $U$"
+    },
+    {
+      "set": "V2",
+      "name": "Service strip $V_2$"
+    },
+    {
+      "set": "X",
+      "name": "$x$ accumulator strip"
+    },
+    {
+      "set": "scal",
+      "name": "Scalars",
+      "muted": true
+    },
+    {
+      "set": "jrn",
+      "name": "Journals",
+      "muted": true
+    },
+    {
+      "set": "flag",
+      "name": "Flags",
+      "muted": true
+    },
+    {
+      "transient": true,
+      "name": "AND scratch",
+      "muted": true
+    }
+  ]
+}

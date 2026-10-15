@@ -1,0 +1,8 @@
+{
+ "_provenance": "Task-defining constants (README section 3.2; PARAMS-DERIVATION.md sections 4 and 7): a_P = top 51 bits (MSB-first) of SHA-256(instance_tag), forced odd; a_R = 2^51 - round(a_P/20), the tree-level Symanzik improvement coupling ratio beta_V1/beta_V0 = -1/20 folded mod 2^51; m = accumulator width; eps = 0 because the modular map is exact. grader.py re-derives all of them inline and asserts this file matches; circuits load this file.",
+ "instance_tag": "kickmix-plaquette-trace-accumulate-v2",
+ "m": 51,
+ "a_P": "0x8EBA84840FB",
+ "a_R": "0x7FF8DD12F965A",
+ "eps": 0
+}

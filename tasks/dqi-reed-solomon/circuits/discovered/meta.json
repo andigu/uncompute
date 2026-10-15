@@ -1,0 +1,196 @@
+{
+ "expected": {
+  "toffoli": 442397,
+  "qubits": 1837
+ },
+ "registers": [
+  {
+   "name": "syn",
+   "label": "$S_1\\,..\\,S_{70}$ (70$\\times$12)",
+   "regs": 70
+  }
+ ],
+ "phase_labels": {
+  "init": "Init",
+  "zlin": "Free-$Z$",
+  "bm": "Berlekamp--Massey",
+  "monicize": "Monicize",
+  "omega": "$\\Omega$",
+  "euclid": "Euclid",
+  "sweep": "Sweep",
+  "euclid_inv": "Euclid$^{-1}$",
+  "omega_restore": "$\\Omega$ restore",
+  "unmonicize": "Unmonicize",
+  "reverse": "Reverse",
+  "cleanup": "Cleanup"
+ },
+ "roles": [
+  {
+   "set": "syn",
+   "name": "Syndrome words"
+  },
+  {
+   "set": "sig",
+   "name": "$\\sigma$ words"
+  },
+  {
+   "set": "bb",
+   "name": "$B$ words"
+  },
+  {
+   "set": "dw",
+   "name": "Discrepancy (working)"
+  },
+  {
+   "set": "stk",
+   "name": "Tagged stack"
+  },
+  {
+   "set": "ctl",
+   "name": "Round control (transient)"
+  },
+  {
+   "set": "dcount",
+   "name": "$d$ counter"
+  },
+  {
+   "set": "one",
+   "name": "Euclid constant word"
+  },
+  {
+   "set": "ext",
+   "name": "Bezout pair (extra word)"
+  },
+  {
+   "set": "pre",
+   "name": "Euclid pre-swap flag"
+  },
+  {
+   "set": "zprec",
+   "name": "Zero-pivot record"
+  },
+  {
+   "set": "psipool",
+   "name": "Euclid scratch pool",
+   "muted": true
+  },
+  {
+   "set": "q1",
+   "name": "Euclid scratch",
+   "muted": true
+  },
+  {
+   "set": "qh",
+   "name": "Euclid scratch",
+   "muted": true
+  },
+  {
+   "set": "ql",
+   "name": "Euclid scratch",
+   "muted": true
+  },
+  {
+   "set": "t",
+   "name": "Euclid scratch",
+   "muted": true
+  },
+  {
+   "set": "c",
+   "name": "Euclid scratch",
+   "muted": true
+  },
+  {
+   "set": "flag",
+   "name": "Euclid scratch",
+   "muted": true
+  },
+  {
+   "set": "inv",
+   "name": "Euclid scratch",
+   "muted": true
+  },
+  {
+   "set": "som",
+   "name": "Sweep operands"
+  },
+  {
+   "set": "pq",
+   "name": "Round quotient"
+  },
+  {
+   "set": "dinv",
+   "name": "Round quotient"
+  },
+  {
+   "set": "m",
+   "name": "Round quotient"
+  },
+  {
+   "set": "wreg",
+   "name": "$D_w$ eraser"
+  },
+  {
+   "set": "w0",
+   "name": "Monicize scratch"
+  },
+  {
+   "set": "ymon",
+   "name": "Monicize scratch"
+  },
+  {
+   "set": "nqd",
+   "name": "Inversion chain",
+   "muted": true
+  },
+  {
+   "set": "m3d",
+   "name": "Inversion chain",
+   "muted": true
+  },
+  {
+   "set": "s3d",
+   "name": "Inversion chain",
+   "muted": true
+  },
+  {
+   "set": "yd",
+   "name": "Inversion chain",
+   "muted": true
+  },
+  {
+   "set": "eqt",
+   "name": "Tag compare",
+   "muted": true
+  },
+  {
+   "set": "tree",
+   "name": "Zero-test tree",
+   "muted": true
+  },
+  {
+   "set": "inc",
+   "name": "$d$ carries",
+   "muted": true
+  },
+  {
+   "set": "jscratch",
+   "name": "Journal pool",
+   "muted": true
+  },
+  {
+   "set": "pivA",
+   "name": "Pivot/fan-out",
+   "muted": true
+  },
+  {
+   "set": "pivB",
+   "name": "Pivot/fan-out",
+   "muted": true
+  },
+  {
+   "set": "fanT",
+   "name": "Pivot/fan-out",
+   "muted": true
+  }
+ ]
+}

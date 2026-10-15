@@ -1,0 +1,178 @@
+{
+  "expected": {
+    "toffoli": 104263342,
+    "qubits": 194053
+  },
+  "registers": [
+    {
+      "name": "syn",
+      "label": "$s$ (123×6 syndrome)",
+      "regs": 123
+    }
+  ],
+  "roles": [
+    {
+      "set": "syn",
+      "name": "$s$ (syndrome)"
+    },
+    {
+      "set": "ctr",
+      "name": "Vote counters"
+    },
+    {
+      "set": "vcnt",
+      "name": "Voters counter",
+      "muted": true
+    },
+    {
+      "set": "E",
+      "name": "Sub-pivot stores $E$"
+    },
+    {
+      "set": "Pn",
+      "name": "Normalized pivot rows $P_n$"
+    },
+    {
+      "set": "pinv",
+      "name": "Pivot inverses",
+      "muted": true
+    },
+    {
+      "set": "rowhot",
+      "name": "Slot-row one-hots"
+    },
+    {
+      "set": "colhot",
+      "name": "Slot-col one-hots"
+    },
+    {
+      "set": "used",
+      "name": "Row-used flags",
+      "muted": true
+    },
+    {
+      "set": "colused",
+      "name": "Col-used flags",
+      "muted": true
+    },
+    {
+      "set": "nexthot",
+      "name": "Next-slot one-hot",
+      "muted": true
+    },
+    {
+      "set": "c3",
+      "name": "Claim bits"
+    },
+    {
+      "set": "sigma",
+      "name": "Voted syndromes $\\sigma$"
+    },
+    {
+      "set": "z",
+      "name": "Membership flags $z$"
+    },
+    {
+      "set": "mflags",
+      "name": "Membership column flags",
+      "muted": true
+    },
+    {
+      "set": "mchain",
+      "name": "Membership NOR chain",
+      "muted": true
+    },
+    {
+      "set": "val",
+      "name": "Cell value word",
+      "muted": true
+    },
+    {
+      "set": "pext",
+      "name": "P-extension scratch",
+      "muted": true
+    },
+    {
+      "set": "ival",
+      "name": "Claim inverse word",
+      "muted": true
+    },
+    {
+      "set": "pred",
+      "name": "Vote candidate word",
+      "muted": true
+    },
+    {
+      "set": "kernelA",
+      "name": "Kernel test matrix $A$"
+    },
+    {
+      "set": "ge-used",
+      "name": "GE row-used flags",
+      "muted": true
+    },
+    {
+      "set": "ge-sel",
+      "name": "GE pivot selectors",
+      "muted": true
+    },
+    {
+      "set": "ge-pivoted",
+      "name": "GE pivoted flags",
+      "muted": true
+    },
+    {
+      "set": "ge-pinv",
+      "name": "GE pivot inverses",
+      "muted": true
+    },
+    {
+      "set": "ge-piv",
+      "name": "GE normalized pivots"
+    },
+    {
+      "set": "ge-gather",
+      "name": "GE pivot gather",
+      "muted": true
+    },
+    {
+      "set": "acc",
+      "name": "Basis-vector evaluation word",
+      "muted": true
+    },
+    {
+      "set": "solveM",
+      "name": "Solve system $M$"
+    },
+    {
+      "set": "hot2",
+      "name": "Compaction one-hot",
+      "muted": true
+    },
+    {
+      "set": "hot3",
+      "name": "Payout one-hot",
+      "muted": true
+    },
+    {
+      "transient": true,
+      "name": "AND / gadget scratch",
+      "muted": true
+    }
+  ],
+  "phase_labels": {
+    "init": "Init",
+    "alloc": "Alloc",
+    "votes": "Votes",
+    "kernel": "Kernel RREF",
+    "member": "Membership",
+    "un-kernel": "Un-kernel",
+    "solve": "Solve",
+    "pay": "Phase pay",
+    "un-solve": "Un-solve",
+    "re-kernel": "Re-kernel",
+    "un-member": "Un-membership",
+    "un-votes": "Un-votes",
+    "teardown": "Teardown"
+  }
+}

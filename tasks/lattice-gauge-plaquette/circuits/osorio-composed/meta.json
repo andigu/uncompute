@@ -1,0 +1,50 @@
+{
+  "expected": {
+    "toffoli": 1271424,
+    "qubits": 1927
+  },
+  "registers": [
+    {
+      "name": "g",
+      "label": "$g_0\\,..\\,g_{191}$ (192$\\times$9)",
+      "regs": 192
+    },
+    {
+      "name": "k",
+      "label": "$k$ (51)"
+    }
+  ],
+  "phase_labels": {
+    "init": "Init",
+    "plaq": "Plaquettes",
+    "rect": "Rectangles"
+  },
+  "roles": [
+    {
+      "set": "g",
+      "name": "$g$ links (read-only)"
+    },
+    {
+      "set": "k",
+      "name": "$k$ accumulator"
+    },
+    {
+      "set": "hol",
+      "name": "Product registers"
+    },
+    {
+      "set": "scratch",
+      "name": "Loop scratch (e, cc)",
+      "muted": true
+    },
+    {
+      "set": "addend",
+      "name": "Addend temporary"
+    },
+    {
+      "transient": true,
+      "name": "AND scratch",
+      "muted": true
+    }
+  ]
+}

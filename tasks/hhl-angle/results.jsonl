@@ -1,0 +1,2 @@
+{"source": "circuits/discovered/circuit.py", "h_ops": "99e0420de4dad782c0e8f1b5e8429ebd1c49035fc603e417c02a54374ad7513c", "verdict": "OK", "toffoli": 1348, "qubits": 115, "tq_cost": 155020, "clifford": 56419.0, "ts": 1792036886}
+{"source": "circuits/haner-piecewise/circuit.py", "h_ops": "02aaa8b5751b4be201e5437ddbb128303a4d4fbbc0ac8def7ee304e6d7f9569f", "verdict": "OK", "toffoli": 16468, "qubits": 300, "tq_cost": 4940400, "clifford": 87473.0, "ts": 1792036888}

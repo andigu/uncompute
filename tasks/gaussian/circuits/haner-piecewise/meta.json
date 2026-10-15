@@ -1,0 +1,86 @@
+{
+  "expected": {
+    "toffoli": 23784,
+    "qubits": 362
+  },
+  "registers": [
+    {
+      "name": "x",
+      "label": "$x$ (39)"
+    },
+    {
+      "name": "k",
+      "label": "$k$ (39)"
+    }
+  ],
+  "phase_labels": {
+    "init": "Init",
+    "fold": "Sign fold",
+    "square": "Square",
+    "label": "Interval label",
+    "offset": "Local offset",
+    "lead": "Lead coefficient",
+    "h2": "Horner step 2",
+    "h1": "Horner step 1",
+    "h0": "Horner step 0",
+    "round": "Round + accumulate",
+    "un-h0": "Un-Horner step 0",
+    "un-h1": "Un-Horner step 1",
+    "un-h2": "Un-Horner step 2",
+    "un-lead": "Un-lead coefficient",
+    "un-offset": "Un-offset",
+    "un-label": "Un-label",
+    "un-square": "Un-square",
+    "un-fold": "Un-fold"
+  },
+  "roles": [
+    {
+      "set": "x",
+      "name": "$x$ (input)"
+    },
+    {
+      "set": "k",
+      "name": "$k$ (accumulator)"
+    },
+    {
+      "set": "w",
+      "name": "$w$ (square / local $t$)"
+    },
+    {
+      "set": "label",
+      "name": "Interval label",
+      "muted": true
+    },
+    {
+      "set": "aoff",
+      "name": "$a_l$ (offset word)",
+      "muted": true
+    },
+    {
+      "set": "poly3",
+      "name": "$V_3$ ($c_3$ load)"
+    },
+    {
+      "set": "poly2",
+      "name": "$V_2$"
+    },
+    {
+      "set": "poly1",
+      "name": "$V_1$"
+    },
+    {
+      "set": "poly0",
+      "name": "$V_0$"
+    },
+    {
+      "set": "diag",
+      "name": "Diagonal copy",
+      "muted": true
+    },
+    {
+      "transient": true,
+      "name": "AND + copy scratch",
+      "muted": true
+    }
+  ]
+}

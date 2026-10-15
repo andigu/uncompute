@@ -1,0 +1,75 @@
+{
+  "expected": {
+    "toffoli": 5125070,
+    "qubits": 1938
+  },
+  "registers": [
+    {
+      "name": "syn",
+      "label": "$S_1\\,..\\,S_{70}$ (70$\\times$12)",
+      "regs": 70
+    }
+  ],
+  "phase_labels": {
+    "init": "Init",
+    "init/alloc": "Alloc",
+    "init/scan": "Suffix-zero scan",
+    "init/count": "Degree count",
+    "init/shift": "Block shift",
+    "init/const": "Constants",
+    "eea": "EEA",
+    "eea/flag": "Forney flag",
+    "eea/qfree": "Free $q$",
+    "sweep": "Sweep",
+    "adjoint": "Adjoint",
+    "adjoint/qfree": "Revive $q$",
+    "adjoint/flag": "Clear Forney flag",
+    "adjoint/init": "Un-init"
+  },
+  "roles": [
+    {
+      "set": "syn",
+      "name": "Syndromes"
+    },
+    {
+      "set": "a",
+      "name": "$A$ pads"
+    },
+    {
+      "set": "bb",
+      "name": "$B$ words"
+    },
+    {
+      "set": "ctr",
+      "name": "Counters"
+    },
+    {
+      "set": "q",
+      "name": "Quotient"
+    },
+    {
+      "set": "shift",
+      "name": "Shift",
+      "muted": true
+    },
+    {
+      "set": "ev",
+      "name": "Running evals"
+    },
+    {
+      "set": "gfw",
+      "name": "GF scratch",
+      "muted": true
+    },
+    {
+      "set": "scr",
+      "name": "Bit scratch",
+      "muted": true
+    },
+    {
+      "transient": true,
+      "name": "AND + revived scratch",
+      "muted": true
+    }
+  ]
+}

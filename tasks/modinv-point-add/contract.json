@@ -1,0 +1,10 @@
+{
+ "_provenance": "Task-defining constants shared by grader.py and every circuit. grader.py re-derives every value and asserts equality with this file at import; it refuses to load if they differ. The curve is y^2 = x^3 + 7 over F_p with p = 2^256 - 2^32 - 977, base point G, and group order n. The addend is per-shot classical input data (registers 2 and 3, Bit-kind): the grader draws both operand points for each shot from the seeded test stream, so there is no fixed addend constant. num_tests is the number of test shots, and budget is the failure budget (20 of 100,000, a 2e-4 failure rate).",
+ "p": "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F",
+ "n_order": "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141",
+ "curve_b": 7,
+ "gx": "0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798",
+ "gy": "0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8",
+ "num_tests": 100000,
+ "budget": 20
+}

@@ -1,0 +1,2 @@
+{"source": "circuits/discovered/circuit.py", "h_ops": "8f37467dc2bf89b6233365c6a592e7204931fdf047c5b38a4ede1b0a40048538", "verdict": "OK", "toffoli": 926912, "qubits": 2395, "tq_cost": 2219954240, "clifford": 437084323.0, "ts": 1792037046}
+{"source": "circuits/sakata-fengrao/circuit.py", "h_ops": "de6ce2fd65fc80624c8975ae2092484147c9a5eaff7aaa51bc47dce06844ddf7", "verdict": "OK", "toffoli": 104263342, "qubits": 194053, "tq_cost": 20232614305126, "clifford": 1149008610.0, "ts": 1792038482}

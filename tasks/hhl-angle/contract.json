@@ -1,0 +1,10 @@
+{
+  "_provenance": "Task-defining derived constants of hhl-angle, shared by grader.py (which keeps its own inline derivation and asserts equality with this file) and every circuit under circuits/. eps_ulp = floor(1e-7 * 2^32) = 429 output units (1 ULP = 2^-32 rad): an error below 1e-7 rad. out_max = round(arcsin(2^15/x_min) * 2^32) = round(arcsin(1/2) * 2^32) = round(pi/6 * 2^32), the map's maximum output; out_min = round(arcsin(2^15/x_max) * 2^32), its minimum; both pinned by the mpmath-50dps anchors in reference.py and checked by the grader.py self-test. Domain/widths: X is x_bits-bit unsigned fixed point (x = X/2^16), in-domain x_min <= X <= x_max; k is a k_bits-bit additive accumulator mod 2^k_bits.",
+  "x_bits": 21,
+  "k_bits": 33,
+  "x_min": 65536,
+  "x_max": 2097151,
+  "eps_ulp": 429,
+  "out_max": 2248839617,
+  "out_min": 67111627
+}

@@ -1,0 +1,63 @@
+{
+  "expected": {
+    "toffoli": 1583,
+    "qubits": 139
+  },
+  "registers": [
+    {
+      "name": "x",
+      "label": "$x$ (39)"
+    },
+    {
+      "name": "k",
+      "label": "$k$ (39)"
+    }
+  ],
+  "phase_labels": {
+    "init": "Init",
+    "fold": "Fold",
+    "lookup": "Lookup",
+    "a0add": "Add $a_0$",
+    "mid_mul": "Form $F$",
+    "final_rows": "Accumulate",
+    "mid_unmul": "Erase $F$",
+    "unlook": "Fixup",
+    "unfold": "Unfold"
+  },
+  "roles": [
+    {
+      "set": "x",
+      "name": "$x$ (input)"
+    },
+    {
+      "set": "k",
+      "name": "$k$ (accumulator)"
+    },
+    {
+      "set": "slope",
+      "name": "Slope word"
+    },
+    {
+      "set": "correction",
+      "name": "Correction word"
+    },
+    {
+      "set": "constant",
+      "name": "Constant word"
+    },
+    {
+      "set": "recode",
+      "name": "Booth recode",
+      "muted": true
+    },
+    {
+      "set": "onehot",
+      "name": "One-hot rail"
+    },
+    {
+      "transient": true,
+      "name": "Scratch",
+      "muted": true
+    }
+  ]
+}

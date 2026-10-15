@@ -1,0 +1,2 @@
+{"source": "circuits/babbush-composed/circuit.py", "h_ops": "b56d80cb02c154ad6c1208b46cff55e95989f34691192a33857c83983aea4f61", "verdict": "OK", "toffoli": 55473, "qubits": 139, "tq_cost": 7710747, "clifford": 1070750.0, "ts": 1792036975}
+{"source": "circuits/discovered/circuit.py", "h_ops": "e9beaf77e50e8f15f54f30aff7dcc7c9321cc35e206bbdab60a33a6fd3eb6b06", "verdict": "OK", "toffoli": 14978, "qubits": 126, "tq_cost": 1887228, "clifford": 287994.0, "ts": 1792037017}

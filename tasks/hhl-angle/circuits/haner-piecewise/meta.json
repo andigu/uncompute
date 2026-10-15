@@ -1,0 +1,66 @@
+{
+  "expected": {
+    "toffoli": 16468,
+    "qubits": 300
+  },
+  "registers": [
+    {
+      "name": "X",
+      "label": "$X$ (21)"
+    },
+    {
+      "name": "k",
+      "label": "$k$ (33)"
+    }
+  ],
+  "phase_labels": {
+    "init": "Init",
+    "label": "Interval label",
+    "lead": "Lead coefficient",
+    "h2": "Horner step 2",
+    "h1": "Horner step 1",
+    "h0": "Horner step 0",
+    "round": "Round + accumulate",
+    "un-h0": "Un-Horner step 0",
+    "un-h1": "Un-Horner step 1",
+    "un-h2": "Un-Horner step 2",
+    "un-lead": "Un-lead coefficient",
+    "un-label": "Un-label"
+  },
+  "roles": [
+    {
+      "set": "X",
+      "name": "$X$ (input)"
+    },
+    {
+      "set": "k",
+      "name": "$k$ (accumulator)"
+    },
+    {
+      "set": "label",
+      "name": "Interval label",
+      "muted": true
+    },
+    {
+      "set": "poly3",
+      "name": "$V_3$ ($c_3$ load)"
+    },
+    {
+      "set": "poly2",
+      "name": "$V_2$"
+    },
+    {
+      "set": "poly1",
+      "name": "$V_1$"
+    },
+    {
+      "set": "poly0",
+      "name": "$V_0$"
+    },
+    {
+      "transient": true,
+      "name": "AND scratch",
+      "muted": true
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+ "open_row": [
+  "l48 i2 f0 f3 f8 i51 R f51 i8 i3 f5 v P i48 f50 v",
+  "f53 i96 R f96 i53 i5 i0 f1 f14 f62 i97 R f97 i62 v i50",
+  "f49 P v i14 f13 v f61 i26 R f26 i61 i49 i2 f0 f4 f16",
+  "i24 R f24 i16 v i13 f12 P v i4 f3 f7 v f15 R i15",
+  "i12 i1 f0 f4 f16 f27 i19 R f19 i27 i16 f15 P v i7 f6",
+  "v f18 i10 R f10 i18 i15 i4 f5 f51 f54 i11 R f11 i54 v",
+  "i6 f8 v P i51 f53 v f56 i99 R f99 i56 i8 i3 f4 f17",
+  "f65 i100 R f100 i65 v i53 f52 P v i17 f16 f29 i64 R f64",
+  "i29 i16 i4 f5 u52 l54 i8 f6 f9 f2 i57 R f57 i2 i9 f11",
+  "v P i54 f56 v f59 i102 R f102 i59 i11 i6 f7 f20 f68 i103",
+  "R f103 i68 v i56 f55 P v i20 f19 v f67 i32 R f32 i67",
+  "i55 i8 f6 f10 f22 i30 R f30 i22 v i19 f18 P v i10 f9",
+  "f1 v f21 R i21 i18 i7 f6 f10 f22 f33 i13 R f13 i33 i22",
+  "f21 P v i1 f0 v f12 i4 R f4 i12 i21 i10 f11 f57 f48",
+  "i5 R f5 i48 v i0 f2 v P i57 f59 v f50 i105 R f105",
+  "i50 i2 i9 f10 f23 f71 i106 R f106 i71 v i59 f58 P v i23",
+  "f22 f35 i70 R"
+ ],
+ "y_row": [
+  "f58 i23 i10 i46 f47 u94 l48 i2 f0 f3 f8 i51 R f51 i8 i3",
+  "f5 v P i48 f50 v f53 i96 R f96 i53 i5 i0 f1 f14 f62",
+  "i97 R f97 i62 v i50 f49 P v i14 f13 v f61 i26 R f26",
+  "i61 i49 i2 f0 f4 f16 i24 R f24 i16 v i13 f12 P v i4",
+  "f3 f7 v f15 R i15 i12 i1 f0 f4 f16 f27 i19 R f19 i27",
+  "i16 f15 P v i7 f6 v f18 i10 R f10 i18 i15 i4 f5 f51",
+  "f54 i11 R f11 i54 v i6 f8 v P i51 f53 v f56 i99 R",
+  "f99 i56 i8 i3 f4 f17 f65 i100 R f100 i65 v i53 f52 P v",
+  "i17 f16 f29 i64 R f64 i29 i16 i4 f5 u52 l54 i8 f6 f9 f2",
+  "i57 R f57 i2 i9 f11 v P i54 f56 v f59 i102 R f102 i59",
+  "i11 i6 f7 f20 f68 i103 R f103 i68 v i56 f55 P v i20 f19",
+  "v f67 i32 R f32 i67 i55 i8 f6 f10 f22 i30 R f30 i22 v",
+  "i19 f18 P v i10 f9 f1 v f21 R i21 i18 i7 f6 f10 f22",
+  "f33 i13 R f13 i33 i22 f21 P v i1 f0 v f12 i4 R f4",
+  "i12 i21 i10 f11 f57 f48 i5 R f5 i48 v i0 f2 v P i57",
+  "f59 v f50 i105 R f105 i50 i2 i9 f10 f23 f71 i106 R f106 i71",
+  "v i59 f58 P v i23 f22 f35 i70 R"
+ ],
+ "z_row": [
+  "f10 i167 i154 i190 f191 u46 l48 i2 f0 f3 f8 i51 R f51 i8 i3",
+  "f5 v P i48 f50 v f53 i96 R f96 i53 i5 i0 f1 f14 f62",
+  "i97 R f97 i62 v i50 f49 P v i14 f13 v f61 i26 R f26",
+  "i61 i49 i2 f0 f4 f16 i24 R f24 i16 v i13 f12 P v i4",
+  "f3 f7 v f15 R i15 i12 i1 f0 f4 f16 f27 i19 R f19 i27",
+  "i16 f15 P v i7 f6 v f18 i10 R f10 i18 i15 i4 f5 f51",
+  "f54 i11 R f11 i54 v i6 f8 v P i51 f53 v f56 i99 R",
+  "f99 i56 i8 i3 f4 f17 f65 i100 R f100 i65 v i53 f52 P v",
+  "i17 f16 f29 i64 R f64 i29 i16 i4 f5 u52 l54 i8 f6 f9 f2",
+  "i57 R f57 i2 i9 f11 v P i54 f56 v f59 i102 R f102 i59",
+  "i11 i6 f7 f20 f68 i103 R f103 i68 v i56 f55 P v i20 f19",
+  "v f67 i32 R f32 i67 i55 i8 f6 f10 f22 i30 R f30 i22 v",
+  "i19 f18 P v i10 f9 f1 v f21 R i21 i18 i7 f6 f10 f22",
+  "f33 i13 R f13 i33 i22 f21 P v i1 f0 v f12 i4 R f4",
+  "i12 i21 i10 f11 f57 f48 i5 R f5 i48 v i0 f2 v P i57",
+  "f59 v f50 i105 R f105 i50 i2 i9 f10 f23 f71 i106 R f106 i71",
+  "v i59 f58 P v i23 f22 f35 i70 R"
+ ],
+ "tail": [
+  "f10 i167 i154 i190 f191 u46"
+ ]
+}

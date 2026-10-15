@@ -1,0 +1,2 @@
+{"source": "circuits/discovered/circuit.py", "h_ops": "0b4fe9b23e94ef22506d63fb846588233c6fb4548a85f10e54f02b1b47a05c8e", "verdict": "OK", "toffoli": 172128, "qubits": 1859, "tq_cost": 319985952, "clifford": 1885109.0, "ts": 1792036907}
+{"source": "circuits/osorio-composed/circuit.py", "h_ops": "ecb1e8669269cbbd0fec5af7355deaf962c870c1bbcc6402723137f5e2dbbb31", "verdict": "OK", "toffoli": 1271424, "qubits": 1927, "tq_cost": 2450034048, "clifford": 8069952.0, "ts": 1792036998}

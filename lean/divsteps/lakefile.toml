@@ -1,0 +1,17 @@
+name = "hddivsteps590"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["Hddivsteps590"]
+
+[leanOptions]
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+relaxedAutoImplicit = false
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.32.2"
+
+[[lean_lib]]
+name = "Hddivsteps590"

@@ -1,0 +1,85 @@
+{
+  "expected": {
+    "toffoli": 14978,
+    "qubits": 126
+  },
+  "registers": [
+    {
+      "name": "i",
+      "label": "$i$ (16)"
+    },
+    {
+      "name": "sigma",
+      "label": "$\\sigma$ (16)"
+    },
+    {
+      "name": "x",
+      "label": "$x$ (40)"
+    }
+  ],
+  "phase_labels": {
+    "init": "Init",
+    "lookup": "Alias lookup (melt-scheduled, adaptive cap)",
+    "cmp": "Compare (in place)",
+    "cmp/select": "Selection swap",
+    "select-blk": "Frame flags",
+    "select-conj": "Frames on",
+    "select-pauli": "SELECT group walk",
+    "select-unconj": "Frames off",
+    "select-unblk": "Flag teardown",
+    "cmp/unselect": "Selection unswap",
+    "cmp/rev": "Uncompare",
+    "unlookup/measure-keep": "Erase keep",
+    "unlookup/measure-alt": "Erase alt",
+    "unlookup/window:prep": "Unlookup window",
+    "unlookup/window:fixup": "Unlookup fixup",
+    "unlookup/window:unprep": "Unlookup unprep"
+  },
+  "roles": [
+    {
+      "set": "i",
+      "name": "reg i"
+    },
+    {
+      "set": "sigma",
+      "name": "reg sigma"
+    },
+    {
+      "set": "x",
+      "name": "reg x"
+    },
+    {
+      "set": "sel",
+      "name": "Selection scratch"
+    },
+    {
+      "set": "word",
+      "name": "Alias word"
+    },
+    {
+      "set": "hold",
+      "name": "Held walk wires",
+      "muted": true
+    },
+    {
+      "set": "carry",
+      "name": "Comparator scratch",
+      "muted": true
+    },
+    {
+      "set": "window",
+      "name": "Unlookup window",
+      "muted": true
+    },
+    {
+      "set": "blk",
+      "name": "Interval chain",
+      "muted": true
+    },
+    {
+      "set": "flag",
+      "name": "Frame flag",
+      "muted": true
+    }
+  ]
+}
