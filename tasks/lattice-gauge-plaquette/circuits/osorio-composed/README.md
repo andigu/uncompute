@@ -4,7 +4,7 @@ This folder holds the baseline circuit for the `lattice-gauge-plaquette`
 task. Its certified cost is 1,271,424 Toffolis and 1,927 peak qubits, a
 TQ-cost of 2,450,034,048. The circuit is our reconstruction of the
 loop-by-loop layer application that Osorio Perez et al. (2025),
-arXiv:2511.17437, price. The accompanying paper (arXiv: TBD) uses it as the
+arXiv:2511.17437, price. The accompanying paper (arXiv:2610.22367) uses it as the
 baseline in its section "Nonabelian lattice-gauge simulation".
 
 The published per-link

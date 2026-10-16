@@ -4,7 +4,7 @@ This task computes a fixed-point approximation of
 $1/\lVert r_i-r_j\rVert$ from two three-dimensional grid points and adds it
 into an accumulator. This pairwise potential appears in real-space and
 first-quantized quantum simulations of chemistry. The accompanying paper
-(arXiv: TBD) describes the discovered circuit in its Supplementary
+(arXiv:2610.22367) describes the discovered circuit in its Supplementary
 Information, section "Numerical function evaluation", subsection "Coulomb
 potential".
 

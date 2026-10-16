@@ -2,7 +2,7 @@
 
 This folder holds the discovered circuit for the `hhl-angle` task. Its
 certified cost is 1,348 Toffolis and 115 peak qubits, a TQ-cost of 155,020.
-The accompanying paper (arXiv: TBD) describes it in the Supplementary
+The accompanying paper (arXiv:2610.22367) describes it in the Supplementary
 Information, section "Numerical function evaluation", subsection "HHL
 rotation angle".
 

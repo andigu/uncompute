@@ -2,7 +2,7 @@
 
 This task computes $e^{-x^2}$ in fixed point and adds the encoded value to an
 accumulator. The operation supports on-the-fly molecular-orbital evaluation
-and Gaussian state preparation. The accompanying paper (arXiv: TBD)
+and Gaussian state preparation. The accompanying paper (arXiv:2610.22367)
 describes the discovered circuit in its Supplementary Information, section
 "Numerical function evaluation", subsection "Fixed-point Gaussian".
 

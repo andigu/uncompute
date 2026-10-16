@@ -2,7 +2,7 @@
 
 This folder holds the discovered circuit for the `modinv-point-add` task. Its
 certified cost is 20,521,949 Toffolis and 843 peak qubits, a TQ-cost of
-17,300,003,007. The accompanying paper (arXiv: TBD) describes it in the
+17,300,003,007. The accompanying paper (arXiv:2610.22367) describes it in the
 supplementary section "Specialized Euclidean construction"; this README maps
 the construction to the code.
 

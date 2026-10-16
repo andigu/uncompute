@@ -6,7 +6,7 @@ intersection (OPI) instance of Khattar et al. (2025), arXiv:2510.10967. The
 circuit acts on the 840-qubit syndrome register: 70 field symbols of 12 bits
 each. On a superposition of syndromes, the basis-state signs become the
 relative phases that drive the DQI interference. The accompanying paper
-(arXiv: TBD) treats this task in the main-text section "Reversible syndrome
+(arXiv:2610.22367) treats this task in the main-text section "Reversible syndrome
 decoding for DQI" and in the SI section "Reed–Solomon decoding for OPI".
 
 ## Certified results

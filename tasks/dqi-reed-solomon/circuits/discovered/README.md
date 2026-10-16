@@ -2,7 +2,7 @@
 
 This folder holds the discovered circuit for the `dqi-reed-solomon` task.
 Its certified cost is 442,397 Toffolis and 1,837 peak qubits, a TQ-cost of
-812,683,289. The accompanying paper (arXiv: TBD) describes it in the SI
+812,683,289. The accompanying paper (arXiv:2610.22367) describes it in the SI
 section "Reed–Solomon decoding for OPI"; this README maps the construction
 to the code.
 

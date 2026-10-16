@@ -5,7 +5,7 @@ certified cost is 6,355 Toffolis and 252 peak qubits, a TQ-cost of
 1,601,460. The circuit is our gate-level reconstruction of the
 inverse-square-root construction of Häner, Roetteler, and Svore (2018),
 arXiv:1805.12445 (HRS). We wrote it from the HRS paper's description. The
-accompanying paper (arXiv: TBD) uses it as the HRS baseline in the
+accompanying paper (arXiv:2610.22367) uses it as the HRS baseline in the
 Supplementary Information, section "Numerical function evaluation".
 
 The construction locates the leading bit and normalizes to a mantissa on a

@@ -3,7 +3,7 @@
 This task benchmarks modular inversion within a complete arithmetic circuit:
 point addition on an elliptic curve over a 256-bit prime field. The modular
 inverse in the chord slope dominates the cost of point addition. The
-accompanying paper (arXiv: TBD) describes the circuits in its supplementary
+accompanying paper (arXiv:2610.22367) describes the circuits in its supplementary
 section "Prime-field modular inversion" and in the main-text section
 "Reversible modular inversion".
 

@@ -5,7 +5,7 @@ cost is 23,784 Toffolis and 362 peak qubits, a TQ-cost of 8,609,808. The
 circuit is our gate-level reconstruction of the piecewise-polynomial
 function evaluation of Häner, Roetteler, and Svore (2018), arXiv:1805.12445
 (HRS), applied to $e^{-x^2}$. We wrote it from the HRS paper's description.
-The accompanying paper (arXiv: TBD) uses it as the HRS baseline in the
+The accompanying paper (arXiv:2610.22367) uses it as the HRS baseline in the
 Supplementary Information, section "Numerical function evaluation".
 
 The circuit uses the HRS building blocks throughout: an even-function sign

@@ -6,7 +6,7 @@ circuit compares a 16-bit value against a per-row threshold to select a
 Hamiltonian term. It applies the selected term's Pauli operator to the
 system register and puts the term's coefficient sign into the global
 phase. It then erases the selection, so no table data remains at the
-boundary. The accompanying paper (arXiv: TBD) describes the task and the
+boundary. The accompanying paper (arXiv:2610.22367) describes the task and the
 discovered circuit in its SI section "Quantum chemistry simulation".
 
 ## Certified results

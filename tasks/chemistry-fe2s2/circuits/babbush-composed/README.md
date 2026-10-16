@@ -4,7 +4,7 @@ This folder holds the baseline circuit for the `chemistry-fe2s2` task. Its
 certified cost is 55,473 Toffolis and 139 peak qubits, a TQ-cost of
 7,710,747. The circuit is our reconstruction of the alias sampling and
 SELECT circuits of Babbush et al. (2018), arXiv:1805.03662. The
-accompanying paper (arXiv: TBD) uses it as the baseline in the SI section
+accompanying paper (arXiv:2610.22367) uses it as the baseline in the SI section
 "Quantum chemistry simulation".
 
 The circuit implements the coherent alias-sampling step of Babbush et

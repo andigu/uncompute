@@ -4,7 +4,7 @@ This folder holds the baseline circuit for the `modinv-point-add` task. Its
 certified cost is 69,529,757 Toffolis and 838 peak qubits, a TQ-cost of
 58,265,936,366. The circuit is our reconstruction of the space-efficient
 extended-Euclidean (EEA) affine point adder of Luo et al. (2026),
-arXiv:2607.13816 (v3). The accompanying paper (arXiv: TBD) uses it in the
+arXiv:2607.13816 (v3). The accompanying paper (arXiv:2610.22367) uses it in the
 supplementary section "Specialized Euclidean construction" and in its
 resource comparison for point addition. "The paper" in this README and in
 `circuit.py` means Luo et al.

@@ -5,7 +5,7 @@ certified cost is 16,468 Toffolis and 300 peak qubits, a TQ-cost of
 4,940,400. The circuit is our gate-level reconstruction of the
 piecewise-polynomial method of Häner, Roetteler, and Svore (2018),
 arXiv:1805.12445 (HRS). We wrote it from the HRS paper's description.
-The accompanying paper (arXiv: TBD) uses it as the HRS baseline in the Supplementary Information, section
+The accompanying paper (arXiv:2610.22367) uses it as the HRS baseline in the Supplementary Information, section
 "Numerical function evaluation".
 
 The circuit uses 35 intervals, each with a degree-3 minimax fit. It

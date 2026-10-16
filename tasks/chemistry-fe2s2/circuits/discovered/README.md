@@ -2,7 +2,7 @@
 
 This folder holds the discovered circuit for the `chemistry-fe2s2` task.
 Its certified cost is 14,978 Toffolis and 126 peak qubits, a TQ-cost of
-1,887,228. The accompanying paper (arXiv: TBD) describes it in the SI
+1,887,228. The accompanying paper (arXiv:2610.22367) describes it in the SI
 section "Quantum chemistry simulation"; this README maps the construction
 to the code. This README uses the names of the code: $\sigma$ is the comparand ($\tau$ in
 the paper), and $f$ is the comparison bit ($h$ in the paper). The task

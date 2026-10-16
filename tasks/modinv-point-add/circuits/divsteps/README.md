@@ -1,7 +1,7 @@
 # divsteps — algebraic branch-decoding divstep inversion
 
 This folder holds the discovered circuit for the `modinv-point-add` task.
-The accompanying paper (arXiv: TBD) describes it in the supplementary section
+The accompanying paper (arXiv:2610.22367) describes it in the supplementary section
 "Prime-field modular inversion", subsection "Divsteps"; this README maps the
 construction to the code. `../../results.jsonl` holds the certified cost.
 

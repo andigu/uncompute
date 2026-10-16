@@ -3,7 +3,7 @@
 This directory contains a Lean 4 development for the half-delta divstep
 algorithm used to compute modular inverses. It certifies two facts needed by
 the reversible modular-inversion circuit for the prime
-`p = 2^256 - 2^32 - 977` (see the accompanying paper, arXiv: TBD):
+`p = 2^256 - 2^32 - 977` (see the accompanying paper, arXiv:2610.22367):
 
 1. every canonical field input reaches a terminal state within 590
    iterations; and

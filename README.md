@@ -1,8 +1,8 @@
 # uncompute
 
 This repository holds the circuits, task definitions, and evaluator for the paper
-*Discovering state-of-the-art quantum circuits with large language models*
-(Gu, Kemeny, Yelin, and Lukin, 2026, arXiv: TBD).
+[*Discovering state-of-the-art quantum circuits with large language models*](https://arxiv.org/abs/2610.22367)
+(Gu, Kemeny, Yelin, and Lukin, 2026, arXiv:2610.22367).
 
 Each task fixes one subroutine of a fault-tolerant quantum algorithm. For each task, the
 repository holds the circuit that an LLM-guided search discovered and, where one exists, a
@@ -26,12 +26,6 @@ rounded as in the paper. Each task's `results.jsonl` holds the exact certified c
 | [`chemistry-fe2s2`](tasks/chemistry-fe2s2/) | SI IV | 5.5×10⁴, 139 | 1.5×10⁴, 126 | 4.1 |
 | [`lattice-gauge-plaquette`](tasks/lattice-gauge-plaquette/) | SI V | 1.3×10⁶, 1,927 | 1.7×10⁵, 1,859 | 7.7 |
 | [`modinv-point-add`](tasks/modinv-point-add/) | SI II | — | 4.0×10⁶, 935 | — |
-
-The `dqi-hermitian` baseline is a direct reversible implementation of the Feng–Rao
-majority-voting decoder of Sakata, Jensen, and Høholdt (1995), doi:10.1109/18.476248.
-No prior reversible compilation of a Hermitian-code decoder exists, so the table reports
-no gain for this task. The prior `modinv-point-add` constructions use different interfaces,
-so the paper compares them in a separate table and reports no single gain.
 
 ## Circuit model
 
@@ -155,10 +149,12 @@ its docstring lists its options.
 
 ```bibtex
 @misc{gu2026discovering,
-  title  = {Discovering state-of-the-art quantum circuits with large language models},
-  author = {Gu, Andi and Kemeny, Alek H. and Yelin, Susanne F. and Lukin, Mikhail D.},
-  year   = {2026},
-  note   = {arXiv: TBD}
+  title         = {Discovering state-of-the-art quantum circuits with large language models},
+  author        = {Gu, Andi and Kemeny, Alek H. and Yelin, Susanne F. and Lukin, Mikhail D.},
+  year          = {2026},
+  eprint        = {2610.22367},
+  archivePrefix = {arXiv},
+  primaryClass  = {quant-ph}
 }
 ```
 

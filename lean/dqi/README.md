@@ -3,7 +3,7 @@
 This directory contains a Lean 4 formalization of a decoder-error bound for
 decoded quantum interferometry (DQI), the optimization framework introduced by
 Jordan et al. (2025), arXiv:2408.08292.
-It supports the DQI decoder-error bound of the accompanying paper (arXiv: TBD).
+It supports the DQI decoder-error bound of the accompanying paper (arXiv:2610.22367).
 The central result here is that decoder failures with total probability mass
 `μ` change the expected DQI objective by order `μ`, rather than by the generic
 order `√μ` expected from a state perturbation of norm `√μ`.

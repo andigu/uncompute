@@ -6,7 +6,7 @@ most 47 with $He=s$ over $\mathrm{GF}(64)$. The circuit receives 123
 six-qubit syndrome symbols and must return them unchanged. This is the
 decoder-dependent phase of decoded quantum interferometry (DQI) for the
 512-position Hermitian optimal polynomial intersection (HOPI) instance of
-Gu and Jordan (2025), arXiv:2510.06603. The accompanying paper (arXiv: TBD)
+Gu and Jordan (2025), arXiv:2510.06603. The accompanying paper (arXiv:2610.22367)
 treats this task in the SI section "Hermitian-code decoding for HOPI".
 
 ## Certified results

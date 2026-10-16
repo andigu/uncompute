@@ -2,7 +2,7 @@
 
 This folder holds the discovered circuit for the `dqi-hermitian` task. Its
 certified cost is 926,912 Toffolis and 2,395 peak qubits, a TQ-cost of
-2,219,954,240. The accompanying paper (arXiv: TBD) describes it in the SI
+2,219,954,240. The accompanying paper (arXiv:2610.22367) describes it in the SI
 section "Hermitian-code decoding for HOPI"; this README maps the
 construction to the code.
 

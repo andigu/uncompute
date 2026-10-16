@@ -2,7 +2,7 @@
 
 This folder holds the discovered circuit for the `coulomb-potential` task. Its
 certified cost is 1,140 Toffolis and 142 peak qubits, a TQ-cost of 161,880.
-The accompanying paper (arXiv: TBD) describes it in the Supplementary
+The accompanying paper (arXiv:2610.22367) describes it in the Supplementary
 Information, section "Numerical function evaluation", subsection "Coulomb
 potential".
 

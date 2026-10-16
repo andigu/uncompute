@@ -2,7 +2,7 @@
 
 This folder holds the discovered circuit for the `lattice-gauge-plaquette`
 task. Its certified cost is 172,128 Toffolis and 1,859 peak qubits, a TQ-cost
-of 319,985,952. The accompanying paper (arXiv: TBD) describes it in its
+of 319,985,952. The accompanying paper (arXiv:2610.22367) describes it in its
 section "Nonabelian lattice-gauge simulation"; this README maps the
 construction to the code.
 

@@ -4,7 +4,7 @@ This task computes one Symanzik-improved magnetic layer on a periodic $4^3$
 lattice. The circuit multiplies the $\Sigma(72\times3)\subset SU(3)$ link
 variables around every plaquette and rectangle and takes their real traces.
 It adds the weighted sum into a 51-bit register and leaves all 192 links
-unchanged. The accompanying paper (arXiv: TBD) describes the task and the
+unchanged. The accompanying paper (arXiv:2610.22367) describes the task and the
 discovered circuit in its supplementary section "Nonabelian lattice-gauge
 simulation".
 

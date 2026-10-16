@@ -2,7 +2,7 @@
 
 This folder holds the discovered circuit for the `gaussian` task. Its
 certified cost is 1,583 Toffolis and 139 peak qubits, a TQ-cost of 220,037.
-The accompanying paper (arXiv: TBD) describes it in the Supplementary
+The accompanying paper (arXiv:2610.22367) describes it in the Supplementary
 Information, section "Numerical function evaluation", subsection
 "Fixed-point Gaussian".
 

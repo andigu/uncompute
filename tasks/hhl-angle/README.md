@@ -3,7 +3,7 @@
 This task computes the fixed-point angle $\arcsin(C/x)$ for $C=1/2$. The
 angle drives the eigenvalue-dependent ancilla rotation in the linear-system
 algorithm of Harrow, Hassidim, and Lloyd (HHL). The accompanying paper
-(arXiv: TBD) describes the discovered circuit in its Supplementary
+(arXiv:2610.22367) describes the discovered circuit in its Supplementary
 Information, section "Numerical function evaluation", subsection "HHL
 rotation angle".
 

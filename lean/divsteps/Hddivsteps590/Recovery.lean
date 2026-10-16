@@ -2,7 +2,7 @@
 # Exact branch recovery (the accompanying paper's appendix, in Lean)
 
 The `z`-form walk and branch-recovery theory of the appendix “Exact branch
-recovery for divstep inversion” of the accompanying paper (arXiv: TBD).
+recovery for divstep inversion” of the accompanying paper (arXiv:2610.22367).
 Correspondence (paper → Lean). The Lean docstrings call the decoding rule
 the *anchored ladder* and the cheap tests the *swap*, *nonnegative-counter*,
 and *terminating classes*.
